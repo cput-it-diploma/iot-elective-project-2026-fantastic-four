@@ -27,9 +27,9 @@
 
 ## 📌 Project Overview
 
-**Project Title:** `[Your Project Title Here]`  
-**Group Name / Number:** `[Group Name / Number]`  
-**Presentation Date:** End of April 2026
+**Project Title:** `Smart Attendence System`  
+**Group Name / Number:** `Fantastic Four`  
+**Presentation Date:** 20 May 2026
 
 ---
 
@@ -37,25 +37,38 @@
 
 | Student Name | Student Number | Role / Responsibility |
 |---|---|---|
-| [Name Surname] | [Student No.] | [e.g. Hardware Lead] |
-| [Name Surname] | [Student No.] | [e.g. Software Lead] |
-| [Name Surname] | [Student No.] | [e.g. Documentation Lead] |
-| [Name Surname] | [Student No.] | [e.g. Testing Lead] |
+| Redah Gamieldien | 222641681 | Documentation Lead |
+| Lyle Solomons | 230123872 | Software Lead |
+| Qaasim Isaacs | 222544422 | Hardware Lead |
+| Ethan Williams | 221454780 | Testing Lead |
 
 ---
 
 ## 💡 Project Idea & Problem Statement
 
 ### Problem Statement
-> _Describe the problem your IoT solution addresses. Be specific._
+Currently, student identification cards serve only a single purpose and is grant access to campus facilities. Classroom attendance, however, is still recorded manually by writing names on a sheet of paper.
+This raises many problems like:
+-	The attendance sheet could get lost or damaged
+-	Some students will sign for their absent friends
+-	It is time consuming to record and verify student attendance
+This results in tracking student attendance being unreliable, inefficient and it is prone to human error. This system needs to be updated with a more accurate system.
+
 
 ### Proposed Solution
-> _Explain how your IoT device/system solves the problem._
+We propose the development of a Smart Attendance System that integrates RFID technology with cloud-based monitoring.
+This system will be installed in every classroom and will function as follows:
+-	Students must tap their RFID enabled student cards on the reader
+-	The system will automatically record their attendance
+-	Visual (LED) and buzzer indicators will confirm successful or failed scans.
+-	Attendance data will be uploaded in real-time to a cloud dashboard using ThingSpeak for temporary storage and monitoring
+-	Each record will include student ID and timestamp using a Real-Time Clock (RTC) module for accuracy.
+
 
 ### Objectives
-- [ ] Objective 1
-- [ ] Objective 2
-- [ ] Objective 3
+1. Track Student attendance
+2.	Manage attendance records for lecturers accurately
+
 
 ---
 
@@ -72,10 +85,15 @@
 
 | Component | Description | Quantity | Purpose |
 |---|---|---|---|
-| [e.g. Arduino Uno] | [Brief description] | [1] | [e.g. Main microcontroller] |
-| [e.g. DHT11 Sensor] | [Brief description] | [1] | [e.g. Temperature & humidity sensing] |
-| [e.g. ESP8266 Wi-Fi Module] | [Brief description] | [1] | [e.g. Wireless connectivity] |
-| [Add more rows as needed] | | | |
+| ESP32 Development Board | Microcontroller with built-in Wi-Fi and Bluetooth | 1 | Main controller that processes RFID data, controls peripherals, and sends attendance data to ThingSpeak |
+| MFRC522 RFID Module | 13.56 MHz RFID reader using SPI communication | 1 | Reads student RFID cards and sends unique ID to ESP32 |
+| RFID Student Cards / Tags | Passive 13.56 MHz RFID cards | Multiple | Used by students to scan and register attendance |
+| 5mm Bi-colour LED (Green/Red) | Dual-colour LED | 1 of each | Provides visual feedback for valid (green) and invalid (red) scans |
+| DB-111G Buzzer | Active buzzer | 1 | Provides audio feedback for scan validation |
+| Resistors (220Ω or 330Ω) | Current-limiting resistors | 1 | Protects LED from excessive current |
+| Jumper Wires | Male-Male / Male-Female connection wires | Multiple | Electrical connections between components |
+| Breadboard | Prototyping board | 1 | Temporary circuit assembly during development |
+| Enclosure Casing | Protective housing | 1 | Secures and protects system for classroom installation |
 
 ---
 
