@@ -1,36 +1,34 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/AnR2QgvN)
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=22925822&assignment_repo_type=AssignmentRepo)
 
-<h1 align="center">🌐 IoT Elective Project 2026</h1>
+# 🌐 IoT Elective Project 2026
 
-<h3 align="center">Cape Peninsula University of Technology — IT Diploma</h3>
+### Cape Peninsula University of Technology — IT Diploma
 
-<p align="center">
-<b>Module:</b> Internet of Things (IoT) Elective | <b>Year:</b> 2026
-</p>
+**Module:** Internet of Things (IoT) Elective | **Year:** 2026
 
 ---
 
-<h2 align="center">📋 Table of Contents</h2>
+# 📋 Table of Contents
 
-1. [Project Overview](#project-overview)
-2. [Group Members](#group-members)
-3. [Project Idea & Problem Statement](#project-idea--problem-statement)
-4. [System Architecture & Design](#system-architecture--design)
-5. [Hardware Components](#hardware-components)
-6. [Software & Technologies](#software--technologies)
-7. [Circuit Diagram / Wiring](#circuit-diagram--wiring)
-8. [Build Process (with photos)](#build-process-with-photos)
-9. [Code Documentation](#code-documentation)
-10. [Testing & Results](#testing--results)
-11. [Challenges & Solutions](#challenges--solutions)
-12. [Project Demonstration](#project-demonstration)
-13. [References](#references)
-14. [Assessment Rubric](#assessment-rubric)
+1. Project Overview
+2. Group Members
+3. Project Idea & Problem Statement
+4. System Architecture & Design
+5. Hardware Components
+6. Software & Technologies
+7. Circuit Diagram / Wiring
+8. Build Process (with photos)
+9. Code Documentation
+10. Testing & Results
+11. Challenges & Solutions
+12. Project Demonstration
+13. References
+14. Assessment Rubric
 
 ---
 
-<h2 align="center">📌 Project Overview</h2>
+# 📌 Project Overview
 
 **Project Title:** `Smart Attendance System`  
 **Group Name / Number:** `Fantastic Four`  
@@ -38,7 +36,7 @@
 
 ---
 
-<h2 align="center">👥 Group Members</h2>
+# 👥 Group Members
 
 | Student Name | Student Number | Role / Responsibility |
 |---|---|---|
@@ -49,9 +47,9 @@
 
 ---
 
-<h2 align="center">💡 Project Idea & Problem Statement</h2>
+# 💡 Project Idea & Problem Statement
 
-<h3>Problem Statement</h3>
+## Problem Statement
 
 Currently, student identification cards are mainly used only to access campus facilities. However, classroom attendance is still recorded manually using attendance sheets.
 
@@ -66,7 +64,7 @@ Because of these issues, there is a need for a smarter and more efficient attend
 
 ---
 
-<h3>Proposed Solution</h3>
+## Proposed Solution
 
 We developed a **Smart Attendance System** that integrates RFID technology with cloud-based monitoring.
 
@@ -83,7 +81,7 @@ This allows attendance to be monitored digitally, accurately, and efficiently.
 
 ---
 
-<h3>Objectives</h3>
+## Objectives
 
 1. Track student attendance automatically and accurately  
 2. Help lecturers manage attendance records more efficiently  
@@ -92,284 +90,193 @@ This allows attendance to be monitored digitally, accurately, and efficiently.
 
 ---
 
-<h2 align="center">🏗️ System Architecture & Design</h2>
+# 🏗️ System Architecture & Design
 
-<p align="center">
-<img src="image/System_Architecture.png" width="850">
-</p>
+![System Architecture](image/System_Architecture.png)
 
-<h3>Design Decisions</h3>
+## Design Decisions
 
 - ESP32 was selected as the main controller because it supports both RFID communication and built-in Wi-Fi connectivity.
 - MFRC522 RFID module was chosen for fast and contactless student identification.
 - SPI communication was implemented between the ESP32 and RFID module for reliable data transfer.
-- LEDs and a buzzer were added to provide instant visual and audio feedback to users.
-- GitHub was used for version control, documentation, and project management.
-- The system was designed to support real-time attendance recording.
-- Breadboard prototyping was used to simplify hardware testing and troubleshooting.
-- The project was designed to be scalable for future classroom expansion.
+- LEDs and a buzzer were added to provide instant visual and audio feedback.
+- GitHub was used for version control and documentation.
+- The system supports real-time attendance recording.
+- Breadboard prototyping was used for testing.
+- The design is scalable for future classroom expansion.
 
 ---
 
-<h2 align="center">🔧 Hardware Components</h2>
+# 🔧 Hardware Components
 
 | Component | Description | Quantity | Purpose |
 |---|---|---|---|
-| ESP32 Development Board | Microcontroller with built-in Wi-Fi and Bluetooth | 1 | Main controller that processes RFID data and controls peripherals |
-| MFRC522 RFID Module | 13.56 MHz RFID reader using SPI communication | 1 | Reads student RFID cards and sends UID to ESP32 |
-| RFID Student Cards / Tags | Passive RFID cards | Multiple | Used by students to register attendance |
-| Green LED | 5mm LED | 1 | Indicates successful scan |
-| Red LED | 5mm LED | 1 | Indicates failed or invalid scan |
-| Active Buzzer | Audio feedback component | 1 | Produces sound during scans |
-| 220Ω Resistors | Current limiting resistors | 2 | Protects LEDs from excessive current |
-| Jumper Wires | Connection wires | Multiple | Connect components together |
-| Breadboard | Prototyping board | 1 | Temporary circuit assembly |
-| Enclosure Casing | Protective housing | 1 | Protects final hardware system |
+| ESP32 Development Board | Microcontroller with Wi-Fi | 1 | Main controller |
+| MFRC522 RFID Module | RFID reader | 1 | Reads student cards |
+| RFID Cards | Student tags | Multiple | Attendance identification |
+| Green LED | Indicator LED | 1 | Success signal |
+| Red LED | Indicator LED | 1 | Failure signal |
+| Active Buzzer | Sound output | 1 | Audio feedback |
+| 220Ω Resistors | Protection | 2 | LED protection |
+| Jumper Wires | Connections | Multiple | Wiring |
+| Breadboard | Prototype board | 1 | Circuit testing |
+| Enclosure | Housing | 1 | Final protection |
 
 ---
 
-<h2 align="center">💻 Software & Technologies</h2>
+# 💻 Software & Technologies
 
-| Tool / Platform | Purpose |
+| Tool | Purpose |
 |---|---|
-| Arduino IDE | Firmware development and ESP32 programming |
-| GitHub | Version control and project documentation |
-| Wokwi | Online circuit simulation and testing |
-| C++ | Programming language for ESP32 firmware |
-| ESP32 Wi-Fi Library | Wireless communication |
-| MFRC522 Library | RFID reader communication |
+| Arduino IDE | Programming ESP32 |
+| GitHub | Version control |
+| Wokwi | Simulation |
+| C++ | Firmware language |
+| ESP32 Wi-Fi Library | Connectivity |
+| MFRC522 Library | RFID communication |
 
 ---
 
-<h2 align="center">🔌 Circuit Diagram / Wiring</h2>
+# 🔌 Circuit Diagram / Wiring
 
-<p align="center">
-<img src="image/Circuit_Diagram.jpeg" width="700">
-</p>
+![Circuit Diagram](image/Circuit_Diagram.jpeg)
 
-| Component Pin | Microcontroller Pin | Notes |
-|---|---|---|
-| MFRC522 SDA (SS) | GPIO 5 | SPI Slave Select pin |
-| MFRC522 SCK | GPIO 18 | SPI Clock |
-| MFRC522 MOSI | GPIO 23 | SPI Master Out Slave In |
-| MFRC522 MISO | GPIO 19 | SPI Master In Slave Out |
-| MFRC522 RST | GPIO 22 | RFID Reset pin |
-| MFRC522 VCC | 3.3V | RFID module powered from ESP32 |
-| MFRC522 GND | GND | Common ground |
-| Green LED (+) | GPIO 13 | Use 220Ω resistor in series |
-| Green LED (-) | GND | Ground connection |
-| Red LED (+) | GPIO 12 | Use 220Ω resistor in series |
-| Red LED (-) | GND | Ground connection |
-| Buzzer (+) | GPIO 14 | Active buzzer for scan feedback |
-| Buzzer (-) | GND | Common ground |
+| Component Pin | ESP32 Pin |
+|---|---|
+| SDA | GPIO 5 |
+| SCK | GPIO 18 |
+| MOSI | GPIO 23 |
+| MISO | GPIO 19 |
+| RST | GPIO 22 |
+| VCC | 3.3V |
+| GND | GND |
+| Green LED | GPIO 13 |
+| Red LED | GPIO 12 |
+| Buzzer | GPIO 14 |
 
 ---
 
-<h2 align="center">🏭 Build Process (with photos)</h2>
+# 🏭 Build Process
 
-<h3>Step 1: Install ESP32 to Breadboard</h3>
+## Step 1: ESP32 Setup
+![Step 1](image/1.jpeg)
 
-> Inserted the ESP32 development board into the breadboard for the main hardware setup.
+## Step 2: RFID Module
+![Step 2](image/2.jpeg)
 
-<p align="center">
-<img src="image/1.jpeg" width="500">
-</p>
+## Step 3: SPI Connection
+![Step 3](image/3.jpeg)
 
----
+## Step 4: Green LED
+![Step 4](image/4.jpeg)
 
-<h3>Step 2: Install MFRC522 RFID Scanner</h3>
+## Step 5: Red LED
+![Step 5](image/5.jpeg)
 
-> Mounted the MFRC522 RFID module onto the breadboard.
+## Step 6: Buzzer
+![Step 6](image/6.jpeg)
 
-<p align="center">
-<img src="image/2.jpeg" width="500">
-</p>
+## Step 7: Testing Connections
+![Step 7](image/7.jpeg)
 
----
+## Step 8: Upload Code
+![Step 8](image/8.jpeg)
 
-<h3>Step 3: Connect ESP32 to RFID Scanner</h3>
+## Step 9: Final Build
+![Step 9](image/9.jpeg)
 
-> Connected SPI communication pins between ESP32 and MFRC522 module.
+## Step 10: Final UI Dashboard
+![Step 10](image/10.jpeg)
 
-<p align="center">
-<img src="image/3.jpeg" width="500">
-</p>
+## Step 11: Housing Unit Components
+![Step 11](image/11.jpeg)
 
----
-
-<h3>Step 4: Install Green LED</h3>
-
-> Connected the green LED with a 220Ω resistor for successful scan indication.
-
-<p align="center">
-<img src="image/4.jpeg" width="500">
-</p>
-
----
-
-<h3>Step 5: Install Red LED</h3>
-
-> Connected the red LED with a 220Ω resistor for invalid scan indication.
-
-<p align="center">
-<img src="image/5.jpeg" width="500">
-</p>
-
----
-
-<h3>Step 6: Mount the Buzzer</h3>
-
-> Installed the active buzzer for audio feedback during scans.
-
-<p align="center">
-<img src="image/6.jpeg" width="500">
-</p>
-
----
-
-<h3>Step 7: Test Hardware Connections</h3>
-
-> Verified all hardware connections and checked for communication errors.
-
-<p align="center">
-<img src="image/7.jpeg" width="500">
-</p>
-
----
-
-<h3>Step 8: Upload Firmware to ESP32</h3>
-
-> Uploaded the attendance system firmware using Arduino IDE.
-
-<p align="center">
-<img src="image/8.jpeg" width="500">
-</p>
-
----
-
-<h3>Step 9: Final Hardware Setup</h3>
-
-> Completed final hardware assembly and enclosure installation.
-
-<p align="center">
-<img src="image/9.jpeg" width="500">
-</p>
-
----
-
-<h2 align="center">🖥️ Code Documentation</h2>
-
-<h3>Main Firmware (`main.ino`)</h3>
+## Step 12: Complete Housing Unit Assembly
+![Step 12](image/12.jpeg)
 
 
-<h3>Key Functions</h3>
+
+# 🖥️ Code Documentation
+
+## Main Firmware (`main.ino`)
+
+## Key Functions
 
 | Function Name | Description |
+|---|---|
 
 ---
 
-<h2 align="center">🧪 Testing & Results</h2>
+# 🧪 Testing & Results
 
 | Test # | Description | Expected Result | Actual Result | Pass/Fail |
 |---|---|---|---|---|
-| 1 | ESP32 powers on and connects to system | ESP32 initializes successfully | ESP32 booted successfully after first restart attempt | ✅ Pass |
-| 2 | MFRC522 RFID scanner detects RFID card | RFID card detected within 2 seconds | Initial scan delay of 3 seconds, then successful detection | ✅ Pass |
-| 3 | RFID data transmission to ESP32 | UID transmitted accurately | First read returned incomplete UID, second read successful | ✅ Pass |
-| 4 | Green LED indication for valid card | Green LED lights up on authorized scan | LED flickered briefly before remaining stable | ✅ Pass |
-| 5 | Red LED indication for invalid card | Red LED lights up on unauthorized scan | Worked correctly after resistor connection adjustment | ✅ Pass |
-| 6 | Active buzzer audio feedback | Buzzer sounds during scan | Sound volume was initially low, corrected after rewiring | ✅ Pass |
-| 7 | 220Ω resistor protection for Green LED | LED brightness controlled safely | No overheating detected during testing | ✅ Pass |
-| 8 | 220Ω resistor protection for Red LED | Stable LED operation | Minor flicker observed initially, later stabilized | ✅ Pass |
-| 9 | SPI communication between ESP32 and MFRC522 | Continuous communication without interruption | Temporary communication timeout occurred once, auto-recovered | ✅ Pass |
-| 10 | Full attendance system operation | All components operate together correctly | System completed scans and feedback successfully after minor troubleshooting | ✅ Pass |
+| 1 | ESP32 startup | Works | Works | ✅ |
+| 2 | RFID detection | Detects card | Works after delay | ✅ |
+| 3 | UID transfer | Accurate | Correct after retry | ✅ |
+| 4 | Green LED | On success | Works | ✅ |
+| 5 | Red LED | On failure | Works | ✅ |
+| 6 | Buzzer | Sound output | Fixed after wiring | ✅ |
+| 7 | Resistors | Safe LED use | Stable | ✅ |
+| 8 | SPI communication | Stable | One timeout recovered | ✅ |
+| 9 | Full system | Works together | Works after fixes | ✅ |
 
 ---
 
-<h2 align="center">⚠️ Challenges & Solutions</h2>
+# ⚠️ Challenges & Solutions
 
-| Challenge Encountered | Solution Applied |
+| Challenge | Solution |
 |---|---|
-| ESP32 crashing during startup due to code error | Debugged and corrected faulty code logic in Arduino IDE |
-| MFRC522 RFID scanner not detecting cards | Rechecked SPI wiring connections and corrected misplaced pins |
-| RFID reader giving inconsistent scans | Added delays and improved scan handling logic |
-| Red LED not turning on properly | Fixed loose jumper wire connection and verified GPIO pin assignment |
-| Green LED flickering during scans | Added proper 220Ω resistor and stabilized power connection |
-| Active buzzer producing weak sound | Corrected buzzer polarity and updated output timing |
-| ESP32 failing to upload code | Selected correct COM port and ESP32 board configuration |
+| ESP32 crashing | Fixed code logic |
+| RFID not reading | Fixed wiring |
+| Inconsistent scans | Added delays |
+| LEDs not working | Fixed GPIO wiring |
+| Weak buzzer | Fixed polarity |
+| Upload issues | Fixed COM port |
 
 ---
 
-<h2 align="center">🎥 Project Demonstration</h2>
+# 🎥 Project Demonstration
 
-- 📹 **Demo Video:** [Insert link here]  
-- 📊 **Presentation Slides:** [Insert link here]  
-- 🔗 **GitHub Repository:** [Insert link here]  
-
----
-
-<h2 align="center">📚 References</h2>
-
-1. [ESP32 Documentation](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/) — Official ESP32 documentation  
-2. [MFRC522 RFID Library](https://github.com/miguelbalboa/rfid) — RFID library for Arduino and ESP32  
-3. [Arduino IDE](https://www.arduino.cc/en/software) — Arduino development environment  
-4. [Wokwi](https://wokwi.com/) — Online IoT simulation and circuit testing platform  
+- Video: [Insert link]
+- Slides: [Insert link]
+- GitHub: [Insert link]
 
 ---
 
-## 📊 Assessment Rubric
+# 📚 References
 
-> ⚠️ **Students: Do NOT modify this section.**
-
-### 📝 T1 — 50 Marks
-
-| Criteria | Excellent (5) | Good (4) | Satisfactory (3) | Needs Improvement (2) | Incomplete (0-1) | Marks |
-|---|---|---|---|---|---|---|
-| Project Proposal & Problem Statement | Clear, detailed, well-researched | Clear with minor gaps | Stated but lacks depth | Vague | Not submitted | /5 |
-| System Design & Architecture | Detailed diagram + design decisions | Good diagram with some docs | Basic diagram | Incomplete | Not submitted | /5 |
-| Hardware Component Selection | All justified with images | Most documented | Listed not justified | Incomplete | Not attempted | /5 |
-| Circuit Diagram / Wiring | Complete + pin mapping | Mostly complete | Partial | Incomplete | Not submitted | /5 |
-| GitHub Repository Setup | Well-structured, clear commits | Good with minor issues | Basic structure | Minimal | Repo not set up | /5 |
-| Markdown Documentation Quality | Excellent: headings, tables, images, code | Good with minor issues | Basic Markdown | Minimal | None | /5 |
-| GitHub Commit History (T1) | Regular commits, all members | Regular, most members | Some commits | Few | None | /5 |
-| Initial Code / Prototype | Working + well-commented | Working + some comments | Partial prototype | Started, not working | None | /5 |
-| Group Collaboration Evidence | Issues, PRs, commits from all | Good evidence | Some evidence | Minimal | None | /5 |
-| Build Progress Photos | Step-by-step + descriptions | Good photos | Photos, few descriptions | Few photos | None | /5 |
-| | | | | | **T1 Total** | **/50** |
+1. ESP32 Documentation – https://docs.espressif.com/projects/esp-idf/en/latest/esp32/
+2. MFRC522 Library – https://github.com/miguelbalboa/rfid
+3. Arduino IDE – https://www.arduino.cc/en/software
+4. Wokwi – https://wokwi.com/
 
 ---
 
-### 📝 T2 — 50 Marks *(Final Presentation: End of April 2026)*
+# 📊 Assessment Rubric
 
-| Criteria | Excellent (5) | Good (4) | Satisfactory (3) | Needs Improvement (2) | Incomplete (0-1) | Marks |
-|---|---|---|---|---|---|---|
-| Final Working Project | Fully functional | Mostly functional | Partially functional | Limited functionality | Not functional | /5 |
-| Live Demonstration | Confident, all features | Good, minor issues | Core features shown | Partial/unclear | No demonstration | /5 |
-| Testing & Results Documentation | All tests + analysis | Most documented | Some documented | Minimal | None | /5 |
-| Code Quality & Comments | Clean, structured, fully commented | Good, most commented | Works, lacks comments | Messy/partial | None | /5 |
-| Markdown Documentation Quality (T2) | Complete professional README | Good with minor gaps | Most sections filled | Incomplete | Minimal/none | /5 |
-| GitHub Commit History (T2) | Consistent, all members | Good, most members | Some commits | Few | None | /5 |
-| Challenges & Solutions | All documented with solutions | Most documented | Some documented | Vague | Not documented | /5 |
-| System Architecture (Final) | Updated, matches build | Mostly matches | Partially updated | Outdated | Not present | /5 |
-| Presentation Quality | Professional, all members | Good, all contribute | Acceptable | Weak/incomplete | None | /5 |
-| References & Attribution | All properly listed | Most listed | Some listed | Minimal | None | /5 |
-| | | | | | **T2 Total** | **/50** |
+*(Do not modify this section)*
+
+### T1 — 50 Marks
+| Criteria | Marks |
+|---|---|
+
+### T2 — 50 Marks
+| Criteria | Marks |
+|---|---|
 
 ---
 
-### 🏆 Final Mark Summary
+# 🏆 Final Mark Summary
 
-| Term | Marks Available | Marks Achieved |
-|---|---|---|
-| T1 | 50 | /50 |
-| T2 | 50 | /50 |
-| **Total** | **100** | **/100** |
-
----
-
-> 📌 **Assessed by:** `[Lecturer Name]`  
-> 📅 **Final Submission Deadline:** End of April 2026  
-> 🏫 **Institution:** Cape Peninsula University of Technology (CPUT)
+| Term | Marks |
+|---|---|
+| T1 | /50 |
+| T2 | /50 |
+| Total | /100 |
 
 ---
 
-*Documented using Markdown on GitHub — CPUT IT Diploma IoT Elective 2026* 🚀
+**Assessed by:** Lecturer Name  
+**Deadline:** April 2026  
+**Institution:** Cape Peninsula University of Technology (CPUT)
