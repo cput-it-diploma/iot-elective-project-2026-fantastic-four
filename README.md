@@ -88,7 +88,7 @@ This allows attendance to be monitored digitally, accurately, and efficiently.
 
 ## 🏗️ System Architecture & Design
 
-![System Architecture Diagram](image/System_Architecture.jpeg)
+![System Architecture Diagram](image/System_Architecture.png)
 
 ### Design Decisions
 
