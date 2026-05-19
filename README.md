@@ -265,12 +265,53 @@ This allows attendance to be monitored digitally, accurately, and efficiently.
 3. [Arduino IDE](https://www.arduino.cc/en/software) — Arduino development environment  
 4. [Wokwi](https://wokwi.com/) — Online IoT simulation and circuit testing platform
 ---
-
 ## 📊 Assessment Rubric
 
 > ⚠️ **Students: Do NOT modify this section.**
 
-[KEEP THE REST OF YOUR RUBRIC SECTION EXACTLY AS IT IS]
+### 📝 T1 — 50 Marks
+
+| Criteria | Excellent (5) | Good (4) | Satisfactory (3) | Needs Improvement (2) | Incomplete (0-1) | Marks |
+|---|---|---|---|---|---|---|
+| Project Proposal & Problem Statement | Clear, detailed, well-researched | Clear with minor gaps | Stated but lacks depth | Vague | Not submitted | /5 |
+| System Design & Architecture | Detailed diagram + design decisions | Good diagram with some docs | Basic diagram | Incomplete | Not submitted | /5 |
+| Hardware Component Selection | All justified with images | Most documented | Listed not justified | Incomplete | Not attempted | /5 |
+| Circuit Diagram / Wiring | Complete + pin mapping | Mostly complete | Partial | Incomplete | Not submitted | /5 |
+| GitHub Repository Setup | Well-structured, clear commits | Good with minor issues | Basic structure | Minimal | Repo not set up | /5 |
+| Markdown Documentation Quality | Excellent: headings, tables, images, code | Good with minor issues | Basic Markdown | Minimal | None | /5 |
+| GitHub Commit History (T1) | Regular commits, all members | Regular, most members | Some commits | Few | None | /5 |
+| Initial Code / Prototype | Working + well-commented | Working + some comments | Partial prototype | Started, not working | None | /5 |
+| Group Collaboration Evidence | Issues, PRs, commits from all | Good evidence | Some evidence | Minimal | None | /5 |
+| Build Progress Photos | Step-by-step + descriptions | Good photos | Photos, few descriptions | Few photos | None | /5 |
+| | | | | | **T1 Total** | **/50** |
+
+---
+
+### 📝 T2 — 50 Marks *(Final Presentation: End of April 2026)*
+
+| Criteria | Excellent (5) | Good (4) | Satisfactory (3) | Needs Improvement (2) | Incomplete (0-1) | Marks |
+|---|---|---|---|---|---|---|
+| Final Working Project | Fully functional | Mostly functional | Partially functional | Limited functionality | Not functional | /5 |
+| Live Demonstration | Confident, all features | Good, minor issues | Core features shown | Partial/unclear | No demonstration | /5 |
+| Testing & Results Documentation | All tests + analysis | Most documented | Some documented | Minimal | None | /5 |
+| Code Quality & Comments | Clean, structured, fully commented | Good, most commented | Works, lacks comments | Messy/partial | None | /5 |
+| Markdown Documentation Quality (T2) | Complete professional README | Good with minor gaps | Most sections filled | Incomplete | Minimal/none | /5 |
+| GitHub Commit History (T2) | Consistent, all members | Good, most members | Some commits | Few | None | /5 |
+| Challenges & Solutions | All documented with solutions | Most documented | Some documented | Vague | Not documented | /5 |
+| System Architecture (Final) | Updated, matches build | Mostly matches | Partially updated | Outdated | Not present | /5 |
+| Presentation Quality | Professional, all members | Good, all contribute | Acceptable | Weak/incomplete | None | /5 |
+| References & Attribution | All properly listed | Most listed | Some listed | Minimal | None | /5 |
+| | | | | | **T2 Total** | **/50** |
+
+---
+
+### 🏆 Final Mark Summary
+
+| Term | Marks Available | Marks Achieved |
+|---|---|---|
+| T1 | 50 | /50 |
+| T2 | 50 | /50 |
+| **Total** | **100** | **/100** |
 
 ---
 
