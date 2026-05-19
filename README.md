@@ -1,13 +1,17 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/AnR2QgvN)
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=22925822&assignment_repo_type=AssignmentRepo)
 
-# 🌐 IoT Elective Project 2026
-### Cape Peninsula University of Technology — IT Diploma
-**Module:** Internet of Things (IoT) Elective | **Year:** 2026
+<h1 align="center">🌐 IoT Elective Project 2026</h1>
+
+<h3 align="center">Cape Peninsula University of Technology — IT Diploma</h3>
+
+<p align="center">
+<b>Module:</b> Internet of Things (IoT) Elective | <b>Year:</b> 2026
+</p>
 
 ---
 
-## 📋 Table of Contents
+<h2 align="center">📋 Table of Contents</h2>
 
 1. [Project Overview](#project-overview)
 2. [Group Members](#group-members)
@@ -26,7 +30,7 @@
 
 ---
 
-## 📌 Project Overview
+<h2 align="center">📌 Project Overview</h2>
 
 **Project Title:** `Smart Attendance System`  
 **Group Name / Number:** `Fantastic Four`  
@@ -34,20 +38,20 @@
 
 ---
 
-## 👥 Group Members
+<h2 align="center">👥 Group Members</h2>
 
 | Student Name | Student Number | Role / Responsibility |
 |---|---|---|
-| Redah Gamieldien | 222641681 | Documentation Lead |
+| Redah Gamieldien | 222641681 | Testing Lead |
 | Lyle Solomons | 230123872 | Software Lead |
 | Qaasim Isaacs | 222544422 | Hardware Lead |
-| Ethan Williams | 221454780 | Testing Lead |
+| Ethan Williams | 221454780 | Documentation Lead |
 
 ---
 
-## 💡 Project Idea & Problem Statement
+<h2 align="center">💡 Project Idea & Problem Statement</h2>
 
-### Problem Statement
+<h3>Problem Statement</h3>
 
 Currently, student identification cards are mainly used only to access campus facilities. However, classroom attendance is still recorded manually using attendance sheets.
 
@@ -62,7 +66,7 @@ Because of these issues, there is a need for a smarter and more efficient attend
 
 ---
 
-### Proposed Solution
+<h3>Proposed Solution</h3>
 
 We developed a **Smart Attendance System** that integrates RFID technology with cloud-based monitoring.
 
@@ -79,18 +83,22 @@ This allows attendance to be monitored digitally, accurately, and efficiently.
 
 ---
 
-### Objectives
+<h3>Objectives</h3>
 
-1. Track student attendance automatically and accurately
-2. Help lecturers manage attendance records more efficiently
-3. Reduce human error and fraudulent attendance marking
-4. Demonstrate the use of IoT technology in a real-world educational environment
+1. Track student attendance automatically and accurately  
+2. Help lecturers manage attendance records more efficiently  
+3. Reduce human error and fraudulent attendance marking  
+4. Demonstrate the use of IoT technology in a real-world educational environment  
 
-## 🏗️ System Architecture & Design
+---
 
-![System Architecture Diagram](image/System_Architecture.png)
+<h2 align="center">🏗️ System Architecture & Design</h2>
 
-### Design Decisions
+<p align="center">
+<img src="image/System_Architecture.png" width="850">
+</p>
+
+<h3>Design Decisions</h3>
 
 - ESP32 was selected as the main controller because it supports both RFID communication and built-in Wi-Fi connectivity.
 - MFRC522 RFID module was chosen for fast and contactless student identification.
@@ -103,9 +111,41 @@ This allows attendance to be monitored digitally, accurately, and efficiently.
 
 ---
 
-## 🔌 Circuit Diagram / Wiring
+<h2 align="center">🔧 Hardware Components</h2>
 
-![Circuit Diagram](image/Circuit_Diagram.jpeg)
+| Component | Description | Quantity | Purpose |
+|---|---|---|---|
+| ESP32 Development Board | Microcontroller with built-in Wi-Fi and Bluetooth | 1 | Main controller that processes RFID data and controls peripherals |
+| MFRC522 RFID Module | 13.56 MHz RFID reader using SPI communication | 1 | Reads student RFID cards and sends UID to ESP32 |
+| RFID Student Cards / Tags | Passive RFID cards | Multiple | Used by students to register attendance |
+| Green LED | 5mm LED | 1 | Indicates successful scan |
+| Red LED | 5mm LED | 1 | Indicates failed or invalid scan |
+| Active Buzzer | Audio feedback component | 1 | Produces sound during scans |
+| 220Ω Resistors | Current limiting resistors | 2 | Protects LEDs from excessive current |
+| Jumper Wires | Connection wires | Multiple | Connect components together |
+| Breadboard | Prototyping board | 1 | Temporary circuit assembly |
+| Enclosure Casing | Protective housing | 1 | Protects final hardware system |
+
+---
+
+<h2 align="center">💻 Software & Technologies</h2>
+
+| Tool / Platform | Purpose |
+|---|---|
+| Arduino IDE | Firmware development and ESP32 programming |
+| GitHub | Version control and project documentation |
+| Wokwi | Online circuit simulation and testing |
+| C++ | Programming language for ESP32 firmware |
+| ESP32 Wi-Fi Library | Wireless communication |
+| MFRC522 Library | RFID reader communication |
+
+---
+
+<h2 align="center">🔌 Circuit Diagram / Wiring</h2>
+
+<p align="center">
+<img src="image/Circuit_Diagram.jpeg" width="700">
+</p>
 
 | Component Pin | Microcontroller Pin | Notes |
 |---|---|---|
@@ -125,101 +165,110 @@ This allows attendance to be monitored digitally, accurately, and efficiently.
 
 ---
 
-## 🏭 Build Process (with photos)
+<h2 align="center">🏭 Build Process (with photos)</h2>
 
-### Step 1: Install ESP32 to Breadboard
+<h3>Step 1: Install ESP32 to Breadboard</h3>
 
 > Inserted the ESP32 development board into the breadboard for the main hardware setup.
 
-![Step 1 Photo](image/1.jpeg)
+<p align="center">
+<img src="image/1.jpeg" width="500">
+</p>
 
 ---
 
-### Step 2: Install MFRC522 RFID Scanner
+<h3>Step 2: Install MFRC522 RFID Scanner</h3>
 
 > Mounted the MFRC522 RFID module onto the breadboard.
 
-![Step 2 Photo](image/2.jpeg)
+<p align="center">
+<img src="image/2.jpeg" width="500">
+</p>
 
 ---
 
-### Step 3: Connect ESP32 to RFID Scanner
+<h3>Step 3: Connect ESP32 to RFID Scanner</h3>
 
 > Connected SPI communication pins between ESP32 and MFRC522 module.
 
-![Step 3 Photo](image/3.jpeg)
+<p align="center">
+<img src="image/3.jpeg" width="500">
+</p>
 
 ---
 
-### Step 4: Install Green LED
+<h3>Step 4: Install Green LED</h3>
 
 > Connected the green LED with a 220Ω resistor for successful scan indication.
 
-![Step 4 Photo](image/4.jpeg)
+<p align="center">
+<img src="image/4.jpeg" width="500">
+</p>
 
 ---
 
-### Step 5: Install Red LED
+<h3>Step 5: Install Red LED</h3>
 
 > Connected the red LED with a 220Ω resistor for invalid scan indication.
 
-![Step 5 Photo](image/5.jpeg)
+<p align="center">
+<img src="image/5.jpeg" width="500">
+</p>
 
 ---
 
-### Step 6: Mount the Buzzer
+<h3>Step 6: Mount the Buzzer</h3>
 
 > Installed the active buzzer for audio feedback during scans.
 
-![Step 6 Photo](image/6.jpeg)
+<p align="center">
+<img src="image/6.jpeg" width="500">
+</p>
 
 ---
 
-### Step 7: Test Hardware Connections
+<h3>Step 7: Test Hardware Connections</h3>
 
 > Verified all hardware connections and checked for communication errors.
 
-![Step 7 Photo](image/7.jpeg)
+<p align="center">
+<img src="image/7.jpeg" width="500">
+</p>
 
 ---
 
-### Step 8: Upload Firmware to ESP32
+<h3>Step 8: Upload Firmware to ESP32</h3>
 
 > Uploaded the attendance system firmware using Arduino IDE.
 
-![Step 8 Photo](image/8.jpeg)
+<p align="center">
+<img src="image/8.jpeg" width="500">
+</p>
 
 ---
 
-### Step 9: Final Hardware Setup
+<h3>Step 9: Final Hardware Setup</h3>
 
 > Completed final hardware assembly and enclosure installation.
 
-![Step 9 Photo](image/9.jpeg)
+<p align="center">
+<img src="image/9.jpeg" width="500">
+</p>
 
 ---
 
-### Step 10: Final UI dashboard
+<h2 align="center">🖥️ Code Documentation</h2>
 
----
-### Step 11: Components for the housing case
-![Step 11 Photo](images/11.jpeg)
----
-### Step 12: Completed housing case
-![Step 12 Photo](images/12.jpeg)
----
-
-## 🖥️ Code Documentation
-
-### Main Firmware (e.g., `main.ino`)
+<h3>Main Firmware (`main.ino`)</h3>
 
 
-### Key Functions
+<h3>Key Functions</h3>
 
+| Function Name | Description |
 
 ---
 
-## 🧪 Testing & Results
+<h2 align="center">🧪 Testing & Results</h2>
 
 | Test # | Description | Expected Result | Actual Result | Pass/Fail |
 |---|---|---|---|---|
@@ -236,7 +285,7 @@ This allows attendance to be monitored digitally, accurately, and efficiently.
 
 ---
 
-## ⚠️ Challenges & Solutions
+<h2 align="center">⚠️ Challenges & Solutions</h2>
 
 | Challenge Encountered | Solution Applied |
 |---|---|
@@ -250,21 +299,23 @@ This allows attendance to be monitored digitally, accurately, and efficiently.
 
 ---
 
-## 🎥 Project Demonstration
+<h2 align="center">🎥 Project Demonstration</h2>
 
-- 📹 **Demo Video:** [Insert link here]
-- 📊 **Presentation Slides:** [Insert link here]
-- 🔗 **GitHub Repository:** [Insert link here]
+- 📹 **Demo Video:** [Insert link here]  
+- 📊 **Presentation Slides:** [Insert link here]  
+- 🔗 **GitHub Repository:** [Insert link here]  
 
 ---
 
-## 📚 References
+<h2 align="center">📚 References</h2>
 
 1. [ESP32 Documentation](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/) — Official ESP32 documentation  
 2. [MFRC522 RFID Library](https://github.com/miguelbalboa/rfid) — RFID library for Arduino and ESP32  
 3. [Arduino IDE](https://www.arduino.cc/en/software) — Arduino development environment  
-4. [Wokwi](https://wokwi.com/) — Online IoT simulation and circuit testing platform
+4. [Wokwi](https://wokwi.com/) — Online IoT simulation and circuit testing platform  
+
 ---
+
 ## 📊 Assessment Rubric
 
 > ⚠️ **Students: Do NOT modify this section.**
