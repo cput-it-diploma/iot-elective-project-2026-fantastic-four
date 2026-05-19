@@ -88,7 +88,7 @@ This allows attendance to be monitored digitally, accurately, and efficiently.
 
 ## 🏗️ System Architecture & Design
 
-![System Architecture Diagram](images/System_Architecture.jpeg)
+![System Architecture Diagram](image/System_Architecture.jpeg)
 
 ### Design Decisions
 
@@ -105,7 +105,7 @@ This allows attendance to be monitored digitally, accurately, and efficiently.
 
 ## 🔌 Circuit Diagram / Wiring
 
-![Circuit Diagram](images/Circuit_Diagram.jpeg)
+![Circuit Diagram](image/Circuit_Diagram.jpeg)
 
 | Component Pin | Microcontroller Pin | Notes |
 |---|---|---|
@@ -131,7 +131,7 @@ This allows attendance to be monitored digitally, accurately, and efficiently.
 
 > Inserted the ESP32 development board into the breadboard for the main hardware setup.
 
-![Step 1 Photo](images/1.jpeg)
+![Step 1 Photo](image/1.jpeg)
 
 ---
 
@@ -139,7 +139,7 @@ This allows attendance to be monitored digitally, accurately, and efficiently.
 
 > Mounted the MFRC522 RFID module onto the breadboard.
 
-![Step 2 Photo](images/2.jpeg)
+![Step 2 Photo](image/2.jpeg)
 
 ---
 
@@ -147,7 +147,7 @@ This allows attendance to be monitored digitally, accurately, and efficiently.
 
 > Connected SPI communication pins between ESP32 and MFRC522 module.
 
-![Step 3 Photo](images/3.jpeg)
+![Step 3 Photo](image/3.jpeg)
 
 ---
 
@@ -155,7 +155,7 @@ This allows attendance to be monitored digitally, accurately, and efficiently.
 
 > Connected the green LED with a 220Ω resistor for successful scan indication.
 
-![Step 4 Photo](images/4.jpeg)
+![Step 4 Photo](image/4.jpeg)
 
 ---
 
@@ -163,7 +163,7 @@ This allows attendance to be monitored digitally, accurately, and efficiently.
 
 > Connected the red LED with a 220Ω resistor for invalid scan indication.
 
-![Step 5 Photo](images/5.jpeg)
+![Step 5 Photo](image/5.jpeg)
 
 ---
 
@@ -171,7 +171,7 @@ This allows attendance to be monitored digitally, accurately, and efficiently.
 
 > Installed the active buzzer for audio feedback during scans.
 
-![Step 6 Photo](images/6.jpeg)
+![Step 6 Photo](image/6.jpeg)
 
 ---
 
@@ -179,7 +179,7 @@ This allows attendance to be monitored digitally, accurately, and efficiently.
 
 > Verified all hardware connections and checked for communication errors.
 
-![Step 7 Photo](images/7.jpeg)
+![Step 7 Photo](image/7.jpeg)
 
 ---
 
@@ -187,7 +187,7 @@ This allows attendance to be monitored digitally, accurately, and efficiently.
 
 > Uploaded the attendance system firmware using Arduino IDE.
 
-![Step 8 Photo](images/8.jpeg)
+![Step 8 Photo](image/8.jpeg)
 
 ---
 
@@ -195,7 +195,7 @@ This allows attendance to be monitored digitally, accurately, and efficiently.
 
 > Completed final hardware assembly and enclosure installation.
 
-![Step 9 Photo](images/9.jpeg)
+![Step 9 Photo](image/9.jpeg)
 
 ---
 
